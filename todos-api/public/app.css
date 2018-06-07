@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #e8edef;
+  text-align: center;
+}
+
+.header {
+  color: #25374b;
+  font-size: 65px;
+  font-weight: normal;
+  margin: 30px;
+}
+
+.header-second {
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 25px;
+  opacity: 0.4;
+}
+
+.form {
+  height: 100px;
+  margin-bottom: 0;
+}
+
+.input {
+  font-size: 25px;
+  background-color: transparent;
+  border-bottom: 2px solid #25374b;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 800px;
+  opacity: 0.6;
+  padding: 15px 0 0 20px;
+  height: 65px;
+  position: relative;
+  top: 30px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.list {
+  list-style-position: inside;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 0 0 10px;
+  text-align: left;
+  color: #25374b;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.task {
+  cursor: pointer;
+  padding: 10px 0;
+  margin-top: 15px;
+}
+
+.task:hover {
+  background-color: #e5e8eb;
+}
+
+.task:hover .btn-delete {
+  opacity: 0.6;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #bdc3c7;
+}
+
+.btn-delete {
+  float: right;
+  opacity: 0;
+  color: #af4844;
+}
+
+.btn-delete:hover {
+  opacity: 1;
+  color: #ff0000;
+}
+
+@media screen and (max-width: 831px) {
+  .input,
+  .list {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  .header {
+    font-size: 55px;
+  }
+
+  .subtitle,
+  .input,
+  .list {
+    font-size: 20px;
+  }
+
+  .input {
+    height: 55px;
+  }
+}
